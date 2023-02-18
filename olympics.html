@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+
+  
+  
+<style>
+.rings {
+  list-style: none;
+  margin: -9.75em -20.5em;
+  position: absolute;
+}
+.rings li {
+  border-radius: 1em;
+  font-size: 1em;
+  height: 12em;
+  margin-left: 1em;
+  margin-top: 1em;
+  position: absolute;
+  width: 12em;
+}
+.rings li:before, .rings li:after {
+  border-radius: 50%;
+  position: absolute;
+}
+.rings li:before {
+  content: "";
+}
+.rings li:after {
+  border: 1.15em solid #000;
+  bottom: 0;
+  content: "";
+  left: -0.1em;
+  right: -0.1em;
+  top: -0.1em;
+}
+.rings .blue {
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.rings .blue:after {
+  border-color: #0080cb;
+}
+.rings .blue + .chain {
+  z-index: 24;
+}
+.rings .blue + .chain:before, .rings .blue + .chain:after {
+  border-bottom-color: transparent;
+}
+.rings .yellow {
+  left: 6.8em;
+  top: 5.7em;
+  z-index: 20;
+}
+.rings .yellow:after {
+  border-color: #fdb408;
+}
+.rings .yellow + .chain {
+  z-index: 23;
+}
+.rings .yellow + .chain:before, .rings .yellow + .chain:after {
+  border-right-color: transparent;
+}
+.rings .black {
+  left: 13.6em;
+  top: 0;
+  z-index: 21;
+}
+.rings .black:after {
+  border-color: #000;
+}
+.rings .green {
+  left: 20.4em;
+  top: 5.7em;
+  z-index: 20;
+}
+.rings .green:after {
+  border-color: #00a84c;
+}
+.rings .green + .chain {
+  z-index: 23;
+}
+.rings .green + .chain:before, .rings .green + .chain:after {
+  border-top-color: transparent;
+}
+.rings .red {
+  left: 27.2em;
+  top: 0;
+  z-index: 10;
+}
+.rings .red:after {
+  border-color: #f02c49;
+}
+.rings .red + .chain {
+  z-index: 23;
+}
+.rings .red + .chain:before, .rings .red + .chain:after {
+  border-left-color: transparent;
+}
+
+.rings .cyan {
+  left: 13.6em;
+  top: 13em;
+  z-index: 10;
+}
+
+.rings .cyan:after {
+  border-color: #a5f2f3;
+}
+
+.rings .cyan_chain {
+  left: 13.6em;
+  top: 13em;
+  z-index: 23;
+}
+
+.rings .cyan_chain:after {
+  border-color: #a5f2f3;
+  border-top-color: transparent;
+}
+
+/* general styling */
+:root {
+  font-size: calc(1vw + 1vh + .25vmin);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fffdee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+}
+</style>
+
+</head>
+
+<body translate="no" >
+  <div class="container">
+  <ul class="rings">
+    <li class="blue"></li>
+    <li class="blue chain"></li>
+    <li class="yellow"></li>
+    <li class="yellow chain"></li>
+    <li class="black"></li>
+    <li class="green"></li>
+    <li class="green chain"></li>
+    <li class="red"></li>
+    <li class="red chain"></li>
+    <li class="cyan"></li>
+    <li class="cyan_chain"></li>
+  </ul>
+</div>
+
+  
+
+</body>
+
+</html>
